@@ -1,0 +1,248 @@
+fileFormatVersion: 2
+guid: 98b73a772f9ce4ff8afe523e91c7dad1
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HeartSprite_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 870
+        width: 347
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17b916f645b2f4401ad636c087462dc4
+      internalID: -1680003684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeartSprite_1
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 882
+        width: 311
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af16f93d75b024d9db784656ea035eaf
+      internalID: 1228497474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      HeartSprite_0: -1680003684
+      HeartSprite_1: 1228497474
+      HeartSprite_10: -233640005
+      HeartSprite_11: 1598429224
+      HeartSprite_12: 1571464949
+      HeartSprite_13: -1008848822
+      HeartSprite_14: -856712514
+      HeartSprite_15: -669307594
+      HeartSprite_16: 779310283
+      HeartSprite_17: -1684750849
+      HeartSprite_18: -447973343
+      HeartSprite_19: -492251453
+      HeartSprite_2: 304826553
+      HeartSprite_20: -239852423
+      HeartSprite_21: -2088997297
+      HeartSprite_22: -2124163318
+      HeartSprite_23: 1303443973
+      HeartSprite_24: 1636286601
+      HeartSprite_25: -493803377
+      HeartSprite_26: 1251903606
+      HeartSprite_27: 576355433
+      HeartSprite_28: -1945965827
+      HeartSprite_29: -219085191
+      HeartSprite_3: -136117012
+      HeartSprite_30: 727748896
+      HeartSprite_31: 1652012617
+      HeartSprite_32: -1153675545
+      HeartSprite_33: -179726305
+      HeartSprite_34: 51391404
+      HeartSprite_35: -199456662
+      HeartSprite_36: -2014658162
+      HeartSprite_37: 1812012987
+      HeartSprite_38: 903531359
+      HeartSprite_39: -1380103689
+      HeartSprite_4: 1149991444
+      HeartSprite_40: -1566147805
+      HeartSprite_41: -2082488183
+      HeartSprite_42: -1364114649
+      HeartSprite_43: 416801819
+      HeartSprite_44: 369070906
+      HeartSprite_45: 1571319434
+      HeartSprite_46: -414956530
+      HeartSprite_47: 1646011832
+      HeartSprite_48: 1463224553
+      HeartSprite_49: -1225122513
+      HeartSprite_5: 1937476487
+      HeartSprite_50: 1269452470
+      HeartSprite_51: -373401546
+      HeartSprite_52: -844878543
+      HeartSprite_6: -1408979235
+      HeartSprite_7: -178867450
+      HeartSprite_8: 1391919400
+      HeartSprite_9: 959647681
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
