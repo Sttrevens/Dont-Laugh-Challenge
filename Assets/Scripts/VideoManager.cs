@@ -143,63 +143,63 @@ public class VideoManager : MonoBehaviour
 
     void Update()
     {
-        // if (!isEndGame)
-        // {
-        //     if (!isOnTable)
-        //     {
-        //         elapsedTime += Time.deltaTime;
+        if (!isEndGame)
+        {
+            if (!isOnTable)
+            {
+                elapsedTime += Time.deltaTime;
 
-        //         float decreaseAmount = (0.25f * Time.deltaTime) / valueUpdateInterval;
-        //         anxietyValue += decreaseAmount;
+                float decreaseAmount = (0.25f * Time.deltaTime) / valueUpdateInterval;
+                anxietyValue += decreaseAmount;
 
-        //         UpdateAnxiety();
+                UpdateAnxiety();
 
-        //         if (elapsedTime >= nextValueUpdateTime)
-        //         {
-        //             nextValueUpdateTime += valueUpdateInterval;
-        //         }
-        //     }
-        //     else
-        //     {
-        //         elapsedTime += Time.deltaTime;
+                if (elapsedTime >= nextValueUpdateTime)
+                {
+                    nextValueUpdateTime += valueUpdateInterval;
+                }
+            }
+            else
+            {
+                elapsedTime += Time.deltaTime;
 
-        //         float decreaseAmount = (0.25f * Time.deltaTime) / valueUpdateInterval;
-        //         anxietyValue -= decreaseAmount;
+                float decreaseAmount = (0.25f * Time.deltaTime) / valueUpdateInterval;
+                anxietyValue -= decreaseAmount;
 
-        //         UpdateAnxiety();
+                UpdateAnxiety();
 
-        //         if (elapsedTime >= nextValueUpdateTime)
-        //         {
-        //             nextValueUpdateTime += valueUpdateInterval;
-        //         }
-        //     }
+                if (elapsedTime >= nextValueUpdateTime)
+                {
+                    nextValueUpdateTime += valueUpdateInterval;
+                }
+            }
 
-        //     if (anxietyValue >= maxAnxietyValue)
-        //     {
-        //         anxietyValue = maxAnxietyValue;
-        //         GameLose();
-        //         isEndGame = true;
-        //         anxietyValue = 0;
-        //         happinessValue = 0;
-        //     }
-        //     else if (anxietyValue < 0)
-        //     {
-        //         anxietyValue = 0;
-        //     }
+            if (anxietyValue >= maxAnxietyValue)
+            {
+                anxietyValue = maxAnxietyValue;
+                GameLose();
+                isEndGame = true;
+                anxietyValue = 0;
+                happinessValue = 0;
+            }
+            else if (anxietyValue < 0)
+            {
+                anxietyValue = 0;
+            }
 
-        //     if (happinessValue >= maxHappinessValue)
-        //     {
-        //         happinessValue = maxHappinessValue;
-        //         GameWin();
-        //         isEndGame = true;
-        //         anxietyValue = 0;
-        //         happinessValue = 0;
-        //     }
-        //     else if (happinessValue < 0)
-        //     {
-        //         happinessValue = 0;
-        //     }
-        // }
+            if (happinessValue >= maxHappinessValue)
+            {
+                happinessValue = maxHappinessValue;
+                GameWin();
+                isEndGame = true;
+                anxietyValue = 0;
+                happinessValue = 0;
+            }
+            else if (happinessValue < 0)
+            {
+                happinessValue = 0;
+            }
+        }
 
         if ((Input.GetMouseButtonDown(0)) && isEndGame)
         {
@@ -226,20 +226,20 @@ public class VideoManager : MonoBehaviour
         if (!isLike)
         {
             isLike = true;
-            //likeCounts[GetCurrentVideoCategory()]++;
+            likeCounts[GetCurrentVideoCategory()]++;
             // Additional logic to update UI or other elements here
             Debug.Log("Liked video in category: " + GetCurrentVideoCategory());
 
-            // if (GetCurrentVideoCategory() == favoriteCategory)
-            // {
-            //     UpdateHappiness();
-            //     isMissFavoriteVideo = false;
-            // }
-            // else
-            // {
-            //     anxietyValue++;
-            //     UpdateAnxiety();
-            // }
+            if (GetCurrentVideoCategory() == favoriteCategory)
+            {
+                UpdateHappiness();
+                isMissFavoriteVideo = false;
+            }
+            else
+            {
+                anxietyValue++;
+                UpdateAnxiety();
+            }
         }
     }
 

@@ -6,7 +6,6 @@ public class GameStartSwipeController : MonoBehaviour
 {
     public RectTransform menuScreen;
     public RectTransform goalImageScreen;
-    public RectTransform goLiveScreen;
     public RectTransform gameScreen;
     public RectTransform winLoseScreen;
     public RectTransform commentScreen;
@@ -31,6 +30,8 @@ public class GameStartSwipeController : MonoBehaviour
 
     public bool isCommentOpened = false;
 
+    public GameObject avatar;
+
     void Update()
     {
         StartSwipe();
@@ -41,9 +42,10 @@ public class GameStartSwipeController : MonoBehaviour
             SwipeDown();
         }
 
-        if (currentScreen == 3)
+        if (currentScreen == 2)
         {
-            // Start the game
+            avatar.SetActive(false);
+           
             StartGame();
         }
     }
@@ -55,7 +57,6 @@ public class GameStartSwipeController : MonoBehaviour
             // First swipe - move the Menu screen down and reveal the Goal Image screen
             StartCoroutine(MovePanel(menuScreen, screenHeight));
             StartCoroutine(MovePanel(goalImageScreen, screenHeight));
-            StartCoroutine(MovePanel(goLiveScreen, screenHeight));
             StartCoroutine(MovePanel(gameScreen, screenHeight));
             StartCoroutine(MovePanel(winLoseScreen, screenHeight));
             StartCoroutine(MoveCommentPanel(commentScreen, screenHeight));
@@ -66,18 +67,6 @@ public class GameStartSwipeController : MonoBehaviour
             // Second swipe - move the Goal Image screen down and reveal the Game screen
             StartCoroutine(MovePanel(menuScreen, screenHeight));
             StartCoroutine(MovePanel(goalImageScreen, screenHeight));
-            StartCoroutine(MovePanel(goLiveScreen, screenHeight));
-            StartCoroutine(MovePanel(gameScreen, screenHeight));
-            StartCoroutine(MovePanel(winLoseScreen, screenHeight));
-            StartCoroutine(MoveCommentPanel(commentScreen, screenHeight));
-            currentScreen++;
-        }
-        else if (currentScreen == 2)
-        {
-            // Second swipe - move the Goal Image screen down and reveal the Game screen
-            StartCoroutine(MovePanel(menuScreen, screenHeight));
-            StartCoroutine(MovePanel(goalImageScreen, screenHeight));
-            StartCoroutine(MovePanel(goLiveScreen, screenHeight));
             StartCoroutine(MovePanel(gameScreen, screenHeight));
             StartCoroutine(MovePanel(winLoseScreen, screenHeight));
             StartCoroutine(MoveCommentPanel(commentScreen, screenHeight));
@@ -210,7 +199,6 @@ public class GameStartSwipeController : MonoBehaviour
         gameStartScreen.SetActive(false);
         StartCoroutine(MovePanel(menuScreen, screenHeight));
         StartCoroutine(MovePanel(goalImageScreen, screenHeight));
-        StartCoroutine(MovePanel(goLiveScreen, screenHeight));
         StartCoroutine(MovePanel(gameScreen, screenHeight));
         StartCoroutine(MovePanel(winLoseScreen, screenHeight));
     }
