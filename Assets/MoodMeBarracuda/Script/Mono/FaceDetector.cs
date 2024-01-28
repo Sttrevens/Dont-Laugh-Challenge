@@ -63,7 +63,7 @@ namespace MoodMe
 
         private int GUIW, GUIH;
 
-        
+        public GameObject face;
 
 
         // Start is called before the first frame update
@@ -126,6 +126,10 @@ namespace MoodMe
                 if (predict_boxes.Count > 0)
                 {
                     OnFaceDetected();
+                }
+                else
+                {
+                    face.SetActive(false);
                 }
 
                 FaceInfo _bestBox = GetBestBox(predict_boxes);
@@ -246,7 +250,7 @@ namespace MoodMe
         {
             // Implement your action here
             Debug.Log("Face detected!");
-            // For example, trigger an event, start an animation, etc.
+            face.SetActive(true);
         }
 
         // private void OnGUI()
