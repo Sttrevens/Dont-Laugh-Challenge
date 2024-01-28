@@ -327,6 +327,38 @@ public class VideoManager : MonoBehaviour
             var temp = currentVideoPlayer;
             currentVideoPlayer = nextVideoPlayer;
             nextVideoPlayer = temp;
+
+        MuteVideoPlayer(nextVideoPlayer);
+
+        // Unmute the current video player
+        UnmuteVideoPlayer(currentVideoPlayer);
+    }
+
+    private void MuteVideoPlayer(VideoPlayer videoPlayer)
+    {
+        if (videoPlayer.audioOutputMode == VideoAudioOutputMode.AudioSource)
+        {
+            AudioSource audioSource = videoPlayer.GetTargetAudioSource(0);
+            if (audioSource != null) audioSource.volume = 0f;
+        }
+        else
+        {
+            videoPlayer.SetDirectAudioVolume(0, 0f);
+        }
+    }
+
+    // Unmute a video player
+    private void UnmuteVideoPlayer(VideoPlayer videoPlayer)
+    {
+        if (videoPlayer.audioOutputMode == VideoAudioOutputMode.AudioSource)
+        {
+            AudioSource audioSource = videoPlayer.GetTargetAudioSource(0);
+            if (audioSource != null) audioSource.volume = 1f;
+        }
+        else
+        {
+            videoPlayer.SetDirectAudioVolume(0, 1f);
+        }
     }
 
     private VideoCategory GetCurrentVideoCategory()
