@@ -31,6 +31,8 @@ public class GameStartSwipeController : MonoBehaviour
 
     public bool isCommentOpened = false;
 
+    public GameObject avatar;
+
     void Update()
     {
         StartSwipe();
@@ -43,7 +45,8 @@ public class GameStartSwipeController : MonoBehaviour
 
         if (currentScreen == 3)
         {
-            // Start the game
+            avatar.SetActive(false);
+           
             StartGame();
         }
     }
